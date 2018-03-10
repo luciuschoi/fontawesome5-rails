@@ -1,8 +1,9 @@
 # Fontawesome5::Rails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fontawesome5/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
+Font Awesome 5 was completely rewritten and released offically.
+In this version, Pro icons, light type, are prepared separately.
 
-TODO: Delete this and the text above, and describe your gem
+This gem was built with Font Awesome 5 Free version to use easily as asset pipeline in Rails.
 
 ## Installation
 
@@ -22,7 +23,15 @@ Or install it yourself as:
 
 ## Usage
 
-In app/assets/application.scss, import fontawesome-all.css as follow:
+In Font Awesome 5 Free version, there are 3 types of font:
+
+  - Regular : `<i class="far fa-address-book"></i>`
+  - Solid   : `<i class="fas fa-address-book"></i>`
+  - Brands  : `<i class="fab fa-apple"></i>`
+
+If you want to know the how to use in detail, you can visit https://fontawesome.com/how-to-use/web-fonts-with-css.
+
+The only one step to use Font Awesome 5 in Rails is needed. In app/assets/application.scss, import fontawesome-all.css as follow:
 
 ```scss
 ···
@@ -34,9 +43,24 @@ In app/assets/application.scss, import fontawesome-all.css as follow:
 
 And, out of box, you can use some useful helper methods as follows:
 
-- far_icon()
-- fas_icon()
-- fab_icon()
+  - far_icon(shape, options = { text: '', size: '1x' })
+    ```erb
+    <%= far_icon 'address-book' %>
+    <%= far_icon 'address-book', text: 'Address Book' %>
+    <%= far_icon 'address-book', text: 'Address Bookconfirm', size: '2x' %>
+    ```
+  - fas_icon(shape, options = { text: '', size: '1x' })
+    ```erb
+    <%= fas_icon 'address-book' %>
+    <%= fas_icon 'address-book', text: 'Address Book' %>
+    <%= fas_icon 'address-book', text: 'Address Book', size: '2x' %>
+    ```
+  - fab_icon(shape, options = { text: '', size: '1x' })
+    ```erb
+    <%= fab_icon 'apple' %>
+    <%= fab_icon 'apple', text: 'Apple' %>
+    <%= fab_icon 'apple', text: 'Apple', size: '2x' %>
+    ```
 
 ## Development
 
