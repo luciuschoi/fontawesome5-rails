@@ -5,6 +5,8 @@ In this version, Pro icons, light type, are prepared separately.
 
 This gem was built with Font Awesome 5 Free version to use easily as asset pipeline in Rails.
 
+[![Gem Version](https://badge.fury.io/rb/fontawesome5-rails.svg)](https://badge.fury.io/rb/fontawesome5-rails)
+
 ## Installation
 
 Add this line to your application's Gemfile:
