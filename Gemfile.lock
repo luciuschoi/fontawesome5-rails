@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fontawesome5-rails (5.0.8.0)
+    fontawesome5-rails (5.0.8.1)
 
 GEM
   remote: https://rubygems.org/

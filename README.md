@@ -25,7 +25,7 @@ Or install it yourself as:
 
 ## Usage
 
-In Font Awesome 5 Free version, there are 3 types of font:
+In Font Awesome 5 Free version, there are 3 icon styles:
 
   - Regular : `<i class="far fa-address-book"></i>`
   - Solid   : `<i class="fas fa-address-book"></i>`
@@ -45,24 +45,53 @@ The only one step to use Font Awesome 5 in Rails is needed. In app/assets/applic
 
 And, out of box, you can use some useful helper methods as follows:
 
-  - far_icon(shape, options = { text: '', size: '1x' })
+  - fa_icon(shape, options = {}) or far_icon(shape, options = {})
     ```erb
+    <%= fa_icon 'address-book' %>
+    <%= fa_icon 'address-book', text: 'Address Book' %>
+    <%= fa_icon 'address-book', text: 'Address Bookconfirm', size: '2x' %>
     <%= far_icon 'address-book' %>
     <%= far_icon 'address-book', text: 'Address Book' %>
     <%= far_icon 'address-book', text: 'Address Bookconfirm', size: '2x' %>
     ```
-  - fas_icon(shape, options = { text: '', size: '1x' })
+  - fas_icon(shape, options = {})
     ```erb
     <%= fas_icon 'address-book' %>
     <%= fas_icon 'address-book', text: 'Address Book' %>
     <%= fas_icon 'address-book', text: 'Address Book', size: '2x' %>
     ```
-  - fab_icon(shape, options = { text: '', size: '1x' })
+  - fab_icon(shape, options = {})
     ```erb
     <%= fab_icon 'apple' %>
     <%= fab_icon 'apple', text: 'Apple' %>
     <%= fab_icon 'apple', text: 'Apple', size: '2x' %>
     ```
+  - fa_icon_text(shape, text = '', options = {}) or far_icon_text(shape, text = '', options = {})
+    ```erb
+    <%= fa_icon_text 'address-book', 'Address Book' %>
+    <%= fa_icon_text 'address-book', 'Address Bookconfirm', size: '2x' %>
+    <%= far_icon_text 'address-book', 'Address Book' %>
+    <%= far_icon_text 'address-book', 'Address Bookconfirm', size: '2x' %>
+    ```
+  - fas_icon_text(shape, text = '', options = {})
+    ```erb
+    <%= fas_icon 'address-book', 'Address Book' %>
+    <%= fas_icon 'address-book', 'Address Book', size: '2x' %>
+    ```
+  - fab_icon_text(shape, text = '', options = {})
+    ```erb
+    <%= fab_icon 'apple', 'Apple' %>
+    <%= fab_icon 'apple', 'Apple', size: '2x' %>
+    ```
+    
+## Changelog
+
+  - v5.0.8.1
+    - added generic fa_icon() helper with 'regular' icon style by defult.
+    - added generic fa_icon_text() helper with `text` argument which is extracted from `opt` hash argument.
+
+  - v5.0.8.0
+    - released the first version on March 10, 2018.
 
 ## Development
 
