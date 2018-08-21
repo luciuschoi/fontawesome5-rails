@@ -86,6 +86,9 @@ And, out of box, you can use some useful helper methods as follows:
     
 ## Changelog
 
+  - v5.2.0.0
+    - updated with Fontawesome latest version 5.2.0
+
   - v5.0.8.1
     - added generic fa_icon() helper with 'regular' icon style by defult.
     - added generic fa_icon_text() helper with `text` argument which is extracted from `opt` hash argument.
