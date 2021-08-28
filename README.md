@@ -86,6 +86,9 @@ And, out of box, you can use some useful helper methods as follows:
     
 ## Changelog
 
+  - v5.3.0.0
+    - added `class: 'mr-2'` opt hash option to fa_icon_text helper method
+
   - v5.2.0.0
     - updated with Fontawesome latest version 5.2.0
 
