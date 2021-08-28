@@ -24,23 +24,23 @@ module Fontawesome5
         fa_icon(icon_name, opt)
       end
 
-      def fa_icon_text(icon_name, text = '', opt = {})
-        opt.reverse_merge!(style_prefix: 'far', text: text, icon_size: '1x', class: 'mr-1')
+      def fa_icon_text(icon_name, text = '', opt = {class: 'mr-2'})
+        opt.reverse_merge!(style_prefix: 'far', text: text, icon_size: '1x', class: opt[:class])
         fa_icon(icon_name, opt)
       end
 
-      def far_icon_text(icon_name, text = '', opt = {})
-        opt.reverse_merge!(style_prefix: 'far', text: text, icon_size: '1x', class: 'mr-1')
+      def far_icon_text(icon_name, text = '', opt = {class: 'mr-2'})
+        opt.reverse_merge!(style_prefix: 'far', text: text, icon_size: '1x', class: opt[:class])
         fa_icon(icon_name, opt)
       end
 
-      def fas_icon_text(icon_name, text = '', opt = {})
-        opt.reverse_merge!(style_prefix: 'fas', text: text, icon_size: '1x', class: 'mr-1')
+      def fas_icon_text(icon_name, text = '', opt = {class: 'mr-2'})
+        opt.reverse_merge!(style_prefix: 'fas', text: text, icon_size: '1x', class: opt[:class])
         fa_icon(icon_name, opt)
       end
 
-      def fab_icon_text(icon_name, text = '', opt = {})
-        opt.reverse_merge!(style_prefix: 'fab', text: text, icon_size: '1x', class: 'mr-1')
+      def fab_icon_text(icon_name, text = '', opt = {class: 'mr-2'})
+        opt.reverse_merge!(style_prefix: 'fab', text: text, icon_size: '1x', class: opt[:class])
         fa_icon(icon_name, opt)
       end
     end
