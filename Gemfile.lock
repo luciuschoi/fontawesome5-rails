@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    fontawesome5-rails (5.2.0.0)
+    fontawesome5-rails (5.3.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -17,4 +17,4 @@ DEPENDENCIES
   rake (~> 10.0)
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
