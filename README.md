@@ -49,39 +49,39 @@ And, out of box, you can use some useful helper methods as follows:
     ```erb
     <%= fa_icon 'address-book' %>
     <%= fa_icon 'address-book', text: 'Address Book' %>
-    <%= fa_icon 'address-book', text: 'Address Bookconfirm', size: '2x' %>
+    <%= fa_icon 'address-book', text: 'Address Bookconfirm', icon_size: '2x' %>
     <%= far_icon 'address-book' %>
     <%= far_icon 'address-book', text: 'Address Book' %>
-    <%= far_icon 'address-book', text: 'Address Bookconfirm', size: '2x' %>
+    <%= far_icon 'address-book', text: 'Address Bookconfirm', icon_size: '2x' %>
     ```
   - fas_icon(shape, options = {})
     ```erb
     <%= fas_icon 'address-book' %>
     <%= fas_icon 'address-book', text: 'Address Book' %>
-    <%= fas_icon 'address-book', text: 'Address Book', size: '2x' %>
+    <%= fas_icon 'address-book', text: 'Address Book', icon_size: '2x' %>
     ```
   - fab_icon(shape, options = {})
     ```erb
     <%= fab_icon 'apple' %>
     <%= fab_icon 'apple', text: 'Apple' %>
-    <%= fab_icon 'apple', text: 'Apple', size: '2x' %>
+    <%= fab_icon 'apple', text: 'Apple', icon_size: '2x' %>
     ```
   - fa_icon_text(shape, text = '', options = {}) or far_icon_text(shape, text = '', options = {})
     ```erb
     <%= fa_icon_text 'address-book', 'Address Book' %>
-    <%= fa_icon_text 'address-book', 'Address Bookconfirm', size: '2x' %>
+    <%= fa_icon_text 'address-book', 'Address Book', icon_size: '2x' %>
     <%= far_icon_text 'address-book', 'Address Book' %>
-    <%= far_icon_text 'address-book', 'Address Bookconfirm', size: '2x' %>
+    <%= far_icon_text 'address-book', 'Address Book', icon_size: '2x' %>
     ```
   - fas_icon_text(shape, text = '', options = {})
     ```erb
     <%= fas_icon 'address-book', 'Address Book' %>
-    <%= fas_icon 'address-book', 'Address Book', size: '2x' %>
+    <%= fas_icon 'address-book', 'Address Book', icon_size: '2x' %>
     ```
   - fab_icon_text(shape, text = '', options = {})
     ```erb
-    <%= fab_icon 'apple', 'Apple' %>
-    <%= fab_icon 'apple', 'Apple', size: '2x' %>
+    <%= fab_icon_text 'apple', 'Apple' %>
+    <%= fab_icon_text 'apple', 'Apple', icon_size: '2x' %>
     ```
     
 ## Changelog
