@@ -75,8 +75,8 @@ And, out of box, you can use some useful helper methods as follows:
     ```
   - fas_icon_text(shape, text = '', options = {})
     ```erb
-    <%= fas_icon 'address-book', 'Address Book' %>
-    <%= fas_icon 'address-book', 'Address Book', icon_size: '2x' %>
+    <%= fas_icon_text 'address-book', 'Address Book' %>
+    <%= fas_icon_text 'address-book', 'Address Book', icon_size: '2x' %>
     ```
   - fab_icon_text(shape, text = '', options = {})
     ```erb
